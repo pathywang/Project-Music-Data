@@ -188,8 +188,21 @@ function handleUserChange(e) {
   const userId = e.target.value;
 
   if (!userId) {
-    results.textContent = "";
-    return;
+    document.getElementById("title").textContent = "User summary";
+
+    results.querySelectorAll("p").forEach(
+      p => {
+        p.hidden = false;
+     }
+   );
+
+    document.querySelectorAll("#results span")
+     .forEach(span => {
+       span.textContent = "";
+      });
+
+
+   return;
   }
 
   const events = getListenEvents(userId);
