@@ -1,8 +1,32 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Music-data Analysis</title>
     <script type="module" src="script.mjs"></script>
   </head>
   <body>
+    <h1>Music Listening Analysis</h1>
+    <label for="user-select">Select User</label>
+    <select id="user-select" name="user-select">
+    <option value="">Choose a user</option>
+    </select>
+    <main id="results">
+      <h2 id="title">User summary</h2>
+      <p><strong>Most listened song(count):</strong><span id="top-song"></span></p>
+      <p><strong>Most listened song (time):</strong><span id="top-song-time"></span></p>      
+      <p><strong>Most listened artist(count):</strong><span id="top-artist"></span></p>
+      <p><strong>Most listened artist (time):</strong><span id="top-artist-time"></span></p>
+      <p id="friday-count-row"><strong>Friday night song(count):</strong><span id="friday-song"></span></p>
+      <p id="friday-time-row"><strong>Friday night song (time):</strong><span id="friday-song-time"></span></p>
+      <p><strong>Longest streak song:</strong><span id="streak"></span></p>
+      <p id="every-day-row"><strong>Every day songs:</strong><span id="every-day-songs"></span></p>
+      <p><strong id="genres-label">Top genres:</strong><span id="top-genres"></span></p>
+    </main>
+
   </body>
 </html>
+
+
+    
